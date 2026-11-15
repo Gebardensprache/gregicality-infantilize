@@ -1,0 +1,17 @@
+{
+  "package": "me.anomaly.gcyi.mixins",
+  "required": true,
+  "minVersion": "0.8",
+  "compatibilityLevel": "JAVA_8",
+  "mixins": [
+    "energy.EnergyContainerHandlerMixin",
+    "misc.FluidDrillLogicAccessor",
+    "misc.MultiblockMinerLogicAccessor",
+    "misc.TileEntityExplosionMixin",
+    "misc.WirePropertiesMixin",
+    "recipes.RecipeBuilderMixin",
+    "recipes.RecipeLogicMixin",
+    "tank.GTUtilityAccessor",
+    "tool.ToolPropertyMixin"
+  ]
+}

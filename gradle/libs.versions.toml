@@ -6,6 +6,8 @@ jspecify    = "1.0.0"
 jei                  = "4.16.1.302" # Just Enough Items 4.16.1.302
 theOneProbe          = "2667280"    # The One Probe 1.4.28
 
+gregtech             = "2.8.10-beta" # GTCE Unofficial 2.8.10-beta
+
 [libraries]
 # libraries
 annotations          = { group = "org.jetbrains",                 name = "annotations",                     version.ref = "annotations"          }
@@ -13,3 +15,5 @@ jspecify             = { group = "org.jspecify",                  name = "jspeci
 # mods
 jei                  = { group = "mezz.jei",                      name = "jei_1.12.2",                      version.ref = "jei"                  }
 theOneProbe          = { group = "curse.maven",                   name = "top-245211",                      version.ref = "theOneProbe"          }
+
+gregtech             = { group = "gregtech",                      name = "gregtech",                        version.ref = "gregtech"             }

@@ -75,10 +75,7 @@ tasks.named<DeobfuscateTask>("srgifyBinpatchedJar") {
 tasks.withType<Jar> {
     manifest {
         val attrs = mutableMapOf<String, String>()
-        attrs["FMLCorePlugin"] = coreModPluginPath
-        attrs["FMLCorePluginContainsFMLMod"] = "true"
-        attrs["ForceLoadAsMod"] = "true"
-        attrs["FMLAT"] = modId + "_at.cfg"
+        attrs.put("MixinConfigs", "mixins.${modId}.json")
         attributes(attrs)
     }
 }
@@ -143,7 +140,7 @@ dependencies {
         isTransitive = false
     }
 
-    val mixinBooter = modUtils.enableMixins("zone.rong:mixinbooter:10.7", "mixins.${modId}.refmap.json") as String
+    val mixinBooter = modUtils.enableMixins("zone.rong:mixinbooter:12.3", "mixins.${modId}.refmap.json") as String
     api(mixinBooter) {
         isTransitive = false
     }

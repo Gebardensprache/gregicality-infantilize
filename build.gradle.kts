@@ -15,7 +15,16 @@ dependencies {
     implementation(deobf.of(libs.jei))
     implementation(deobf.of(libs.theOneProbe))
 
-    implementation(deobf.of(libs.gregtech))
+    implementation(libs.modularui) {
+        isTransitive = false
+    }
+
+    api(libs.codeChickenLib) {
+        isTransitive = false
+    }
+
+    implementation(deobf.of(files("libs/morphismlib-1.12.2-1.0.0.jar")))
+    implementation(deobf.of(files("libs/gregtech-1.12.2-master-#2901.jar")))
 }
 
 configurations {

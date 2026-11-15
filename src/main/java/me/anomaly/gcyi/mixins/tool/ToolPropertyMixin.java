@@ -27,7 +27,7 @@ public abstract class ToolPropertyMixin {
     private float attackSpeed;
 
     @Shadow
-    public abstract void setUnbreakable(boolean isUnbreakable);
+    public abstract ToolProperty setUnbreakable(boolean isUnbreakable);
 
     @Inject(
             method = "<init>(FFII)V",
